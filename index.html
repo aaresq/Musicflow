@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicFlow ~</title>
+    <link rel="icon" href="https://www.flaticon.com/free-icon/music_4472584" type="w-full h-[500px] bg-cover bg-center">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function changeVideo(videoUrl) {
+            const iframe = document.getElementById('videoPlayer');
+            iframe.src = videoUrl;
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-100">
+    <div class="bg-teal-100 text-black text-center p-4 text-xl font-bold">Here's some music you have to listen!</div>
+    <br>
+
+    <div class="flex h-[calc(100vh-100px)]">
+        <!-- Content Area on the left -->
+        <div class="w-3/4 bg-black p-3 flex items-center justify-center">
+            <iframe id="videoPlayer" class="w-full h-full" src="https://www.youtube.com/embed/-X8pMHtcqvc?si=mt20DhL3XExuZDUd" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Prestasi list on the right -->
+        <div class="w-1/4 bg-gray-100 p-6 overflow-y-auto"> 
+            <div class="space-y-4">
+                <div onclick="changeVideo('https://www.youtube.com/embed/AE005nZeF-A?si=rQ5CI5SwBXEEPb8l')" class="bg-gray-200 p-3 rounded-md hover:bg-blue-200 cursor-pointer transition-all"> <strong>Ivy </strong> - Frank Ocean</div>
+                <div onclick="changeVideo('https://www.youtube.com/embed/uzS3WG6__G4?si=M6VzcfpPVluuO1bx')" class="bg-gray-200 p-3 rounded-md hover:bg-sky-200 cursor-pointer transition-all"> <strong>Pink + White </strong> - Frank Ocean</div>
+                <div onclick="changeVideo('https://www.youtube.com/embed/P18g4rKns6Q?si=IwGvWJl_7GrNUsWa')" class="bg-gray-200 p-3 rounded-md hover:bg-blue-200 cursor-pointer transition-all"> <strong>Godspeed </strong> - Frank Ocean</div>
+               <div onclick="changeVideo('https://www.youtube.com/embed/4KBUdmOqjIY?si=q5vUfVQUdfHFmqTT')" class="bg-gray-200 p-3 rounded-md hover:bg-blue-200 cursor-pointer transition-all"> <strong>Nikes </strong> - Frank Ocean</div>
+                <div onclick="changeVideo('https://www.youtube.com/embed/BME88lS6aVY?si=mBhVwGsysuD3jwu5')" class="bg-gray-200 p-3 rounded-md hover:bg-blue-200 cursor-pointer transition-all"> <strong>Self Control </strong> - Frank Ocean</div>
+                <div class="text-center bg-gray-200 p-3 rounded-md hover:bg-neutral-300 cursor-pointer transition-all mt-4">
+                    <a href="https://www.canva.com"  target="_blank">Canva 
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="bg-teal-100 font-bold text-black text-center p-4">
+      <marquee behavior="scroll" direction="left">
+          Welcome to rnb's music website 😮👀 Hope you enjoy the musics 🔥
+      </marquee>
+    </div>
+</body>
+</html>
